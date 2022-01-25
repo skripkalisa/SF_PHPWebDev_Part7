@@ -46,22 +46,18 @@ class Route
     $controller = new $controller_name;
     // var_dump($controller);
     // print_r($controller);
-
-    // echo "<br />";
-    // echo "<br />";
     // echo "<br />";
     $action = $action_name;
     // var_dump($action);
     // echo "<br />";
-    // echo "<br />";
-    // echo "<br />";
+
     if (method_exists($controller, $action)) {
       // вызываем действие контроллера
       $controller->$action();
     } else {
       (new Route)->ErrorPage404();
       // echo "Junk!!!!";
-      // Route::ErrorPage404();
+
     }
     // die();
   }
