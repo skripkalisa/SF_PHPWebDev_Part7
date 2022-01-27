@@ -153,6 +153,10 @@ a {
   background: #fffe;
   padding: 1rem 1.5rem;
 }
+
+.main img {
+  max-width: 100%;
+}
 .services h4 {
   text-transform: none;
   font-weight: bold;
