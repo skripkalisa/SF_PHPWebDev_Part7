@@ -16,4 +16,10 @@
 
 ## Screenshot
 
-![Screenshot 1](./pix/Mod29.png, 'desc')
+![Screenshot 1](./pix/Mod29_php-gd.png 'php-gd')
+
+![Screenshot 2](./pix/Mod29_1.png 'Home')
+
+![Screenshot 3](./pix/Mod29_2.png 'Services')
+
+![Screenshot 4](./pix/Mod29_3.png 'Porfolio')

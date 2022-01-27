@@ -6,4 +6,7 @@ class Model
   {
     $this->string = "MVC + PHP = Awesome!";
   }
+  public function get_data()
+  {
+  }
 }

@@ -8,14 +8,19 @@ class Route
     // контроллер и действие по умолчанию
     $controller_name = 'main';
     $action_name = 'index';
-    $routes = $_GET['url'];
-    // $routes = $_SERVER['REQUEST_URI'];
-    // echo $routes;
+    // $routes = $_GET['url'];
+    $routes = explode('/', $_SERVER['REQUEST_URI']);
 
-    if (!empty($routes)) {
-      $controller_name = $routes;
+
+    if (!empty($routes[1])) {
+      $controller_name = $routes[1];
     }
-
+    // получаем имя экшена
+    if (!empty($routes[2])) {
+      $action_name = $routes[2];
+    }
+    // var_dump($routes);
+    // die();
     // добавляем префиксы
     $model_name = 'model_' . $controller_name;
     // var_dump($model_name);
@@ -23,6 +28,7 @@ class Route
     // var_dump($controller_name);
     $action_name = 'action_' . $action_name;
     // var_dump($action_name);
+
     // подцепляем файл с классом модели (файла модели может и не быть)
     $model_file = strtolower($model_name) . '.php';
     // var_dump($model_file);
@@ -30,6 +36,7 @@ class Route
     if (file_exists($model_path)) {
       include "application/models/" . $model_file;
     }
+
     // подцепляем файл с классом контроллера
     $controller_file = strtolower($controller_name) . '.php';
     // var_dump($controller_file);
@@ -42,6 +49,7 @@ class Route
       (new Route)->ErrorPage404();
       // echo "Junk!!!!";
     }
+
     // создаем контроллер
     $controller = new $controller_name;
     // var_dump($controller);
@@ -50,6 +58,7 @@ class Route
     $action = $action_name;
     // var_dump($action);
     // echo "<br />";
+    // die();
 
     if (method_exists($controller, $action)) {
       // вызываем действие контроллера
