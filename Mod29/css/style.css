@@ -85,12 +85,10 @@ a {
     'sidebar main'
     'footer footer';
 }
-.header {
-  grid-area: header;
-}
 
 .header {
-  margin: 2rem auto;
+  grid-area: header;
+  margin: 2rem 0;
   display: grid;
   grid-auto-flow: row dense;
   grid-template-columns: 1fr 2fr;
@@ -99,12 +97,12 @@ a {
 }
 .logo {
   grid-area: logo;
-  padding: 1.5rem;
+  width: 100%;
   display: flex;
   align-items: center;
-  justify-items: center;
+  justify-content: center;
   background: url(https://picsum.photos/id/0/367/267) no-repeat;
-  background-size: contain;
+  background-size: cover;
 }
 .logo a {
   font-size: 3rem;
@@ -112,6 +110,7 @@ a {
   text-shadow: 0 0 0.1rem black;
   line-height: 1.5;
   text-align: center;
+  padding: 1.5rem;
 }
 
 .navbar {
