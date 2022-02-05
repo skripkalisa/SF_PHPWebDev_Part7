@@ -46,8 +46,8 @@
 
 ## Screenshots
 
-![Screenshot 1](./pix/Mod30_1 '1')
+![Screenshot 1](./pix/Mod30_1.png '1')
 
-![Screenshot 2](./pix/Mod30_2 '2')
+![Screenshot 2](./pix/Mod30_2.png '2')
 
-![Screenshot 3](./pix/Mod30_3 '3')
+![Screenshot 3](./pix/Mod30_3.png '3')
