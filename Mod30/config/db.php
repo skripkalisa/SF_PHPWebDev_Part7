@@ -7,7 +7,8 @@
 
 function get_connection()
 {
-    require 'credentials.php';
+    require dirname(__DIR__) . '/config/credentials.php';
+
     return new PDO("mysql:host=$db_host;dbname=$db_name", $db_user, $db_password);
 }
 
@@ -32,9 +33,27 @@ function getUserByEmail(string $email)
     return false;
 }
 
+
 function getUsersList()
 {
     $query = 'SELECT * FROM users ORDER BY id DESC';
     $db = get_connection();
     return $db->query($query, PDO::FETCH_ASSOC);
+}
+
+function getLoginStatus()
+{
+    if (isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true) {
+        return true;
+    }
+    return false;
+}
+
+
+function isAdmin()
+{
+    if (getLoginStatus() && $_SESSION["id"]<=2) {
+        return true;
+    }
+    return false;
 }

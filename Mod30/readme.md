@@ -48,6 +48,16 @@
 
 ![Screenshot 1](./pix/Mod30_1.png '1')
 
-![Screenshot 2](./pix/Mod30_2.png '2')
+![Screenshot 2.1](./pix/Mod30_2.1.png '2.1')
 
-![Screenshot 3](./pix/Mod30_3.png '3')
+![Screenshot 2.2](./pix/Mod30_2.2.png '2.2')
+
+![Screenshot 3.1](./pix/Mod30_3.1.png '3.1')
+
+![Screenshot 3.2](./pix/Mod30_3.2.png '3.2')
+
+![Screenshot 4.1](./pix/Mod30_4.1.png '4.1')
+
+![Screenshot 4.2](./pix/Mod30_4.2.png '4.2')
+
+![Screenshot 4.3](./pix/Mod30_4.3.png '4.3')

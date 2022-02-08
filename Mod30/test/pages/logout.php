@@ -4,7 +4,8 @@
 setcookie("id", "", time() - 3600*24*30*12, "/");
 setcookie("hash", "", time() - 3600*24*30*12, "/", null, null, true); // httponly !!!
 // Переадресовываем браузер на страницу проверки нашего скрипта
-header("Location: /"); exit;
+header("Location: /");
+// exit;
 ?>
 <form method="POST">
   Логин <input name="login" type="text" required><br>
