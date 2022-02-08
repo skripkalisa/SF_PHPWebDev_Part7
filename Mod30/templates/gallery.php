@@ -26,13 +26,13 @@ require_once dirname(__DIR__, 1) . '/bootstrap.php';
     <div class="row">
       <?php foreach ($files as $file): ?>
 
-      <div class="col-12 col-sm-3 col-mb-4">
+      <div class="col-12 col-sm-3 mb-5">
 
         <?php if (isAdmin()):?>
         <form method="post">
           <input type="hidden" name="name"
             value="<?php echo $file; ?>">
-          <button type="submit" class="btn-close" aria-label="Close">
+          <button type="submit" class="btn-close float-end" aria-label="Close">
           </button>
         </form>
         <?php endif;?>

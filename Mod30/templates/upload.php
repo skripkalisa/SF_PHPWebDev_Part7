@@ -3,6 +3,7 @@ require_once dirname(__DIR__, 1) . '/bootstrap.php';
 ?>
 
 <?php if (getLoginStatus()):?>
+
 <!-- Форма загрузки файлов -->
 <form method="post" enctype="multipart/form-data">
   <div class="custom-file">
@@ -32,4 +33,4 @@ require_once dirname(__DIR__, 1) . '/bootstrap.php';
   <button class="btn btn-secondary">Войти</button>
 </a>
 
-<?php endif;?>
+<?php endif;

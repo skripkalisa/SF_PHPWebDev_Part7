@@ -90,9 +90,9 @@ $page = getPage($pages);
 
   <main>
     <div class="container">
-
-      <?php include $page; ?>
-
+      <section class="py-5 px-4">
+        <?php include $page; ?>
+      </section>
     </div>
   </main>
 
