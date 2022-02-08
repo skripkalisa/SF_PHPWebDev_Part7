@@ -43,7 +43,7 @@ if (isset($_GET['name'])) {
           <span
             class="<?php echo (($key % 2) > 0) ? 'bg-light' : ''; ?>">
             <?php echo $comment; ?>
-            <?php if (getLoginStatus() && strpos($comment, $_SESSION['username'])):?>
+            <?php if (getLoginStatus() && strpos($comment, $_SESSION['username'])|| isAdmin()):?>
             <span>
               <input type="hidden" name="line"
                 value="<?php echo $comment; ?>">
