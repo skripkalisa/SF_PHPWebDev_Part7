@@ -1,0 +1,7 @@
+RewriteEngine on
+Options +FollowSymlinks
+Options +Indexes
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.*) /?%{QUERY_STRING}
+# RewriteRule ^test/([0-9]+)/$ test.php?id=$1
