@@ -4,3 +4,8 @@ node_modules/
 *.old
 *.zip
 credentials.php
+w/
+*.zip
+*.tgz
+LocalSettings.php
+*.log
