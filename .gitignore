@@ -9,3 +9,5 @@ w/
 *.tgz
 LocalSettings.php
 *.log
+Homestead/
+vagrant/
